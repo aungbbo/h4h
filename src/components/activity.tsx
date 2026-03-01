@@ -29,17 +29,31 @@ export default function Activity() {
     );
   }
 
+  const total = entry.activities.length;
   const selected = selectedIdx !== null ? entry.activities[selectedIdx] : null;
+
+  const goPrev = () => setSelectedIdx((prev) => (prev! - 1 + total) % total);
+  const goNext = () => setSelectedIdx((prev) => (prev! + 1) % total);
 
   if (selected) {
     return (
       <main className="activity-page">
         <div className="activity-container">
-          <h2 className="activity-title">{selected.title}</h2>
+          <div className="activity-nav">
+            <i
+              className="fa-solid fa-arrow-left activity-arrow"
+              onClick={goPrev}
+            ></i>
+            <h2 className="activity-title">{selected.title}</h2>
+            <i
+              className="fa-solid fa-arrow-right activity-arrow"
+              onClick={goNext}
+            ></i>
+          </div>
           <p className="activity-details">{selected.details}</p>
           <button
             type="button"
-            className="activity-back btn-activity"
+            className="activity-back"
             onClick={() => setSelectedIdx(null)}
           >
             Back to activities

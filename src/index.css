@@ -173,7 +173,7 @@ button:focus-visible {
 .activity-heading {
   margin: 0;
   font-size: 1.8rem;
-  background: linear-gradient(90deg, #ed80ce, #43afcd);
+  background: linear-gradient(135deg, #717cef, #cfa2a2);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -194,7 +194,7 @@ button:focus-visible {
   padding: 16px 20px;
   border-radius: 12px;
   border: none;
-  background: linear-gradient(135deg, #d8dabb, #e9d1e3);
+  background: linear-gradient(135deg, #a9e2d7, #d8e69b);
   color: black;
   font-size: 1.05rem;
   font-weight: 600;
@@ -214,7 +214,7 @@ button:focus-visible {
   margin: 0;
   font-size: 1.6rem;
   text-align: center;
-  background: linear-gradient(90deg, #ed80ce, #43afcd);
+  background: linear-gradient(135deg, #717cef, #cfa2a2);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -224,11 +224,31 @@ button:focus-visible {
   margin: 0;
   line-height: 1.7;
   font-size: 1.05rem;
-  background: linear-gradient(135deg, #d8dabb, #e9d1e3);
+  background: linear-gradient(135deg, #a9e2d7, #d8e69b);
   padding: 32px;
   border-radius: 16px;
   color: black;
   text-align: left;
+}
+
+.activity-nav {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.activity-arrow {
+  cursor: pointer;
+  background: linear-gradient(135deg, #717cef, #cfa2a2);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  font-size: 1.4rem;
+  transition: transform 0.2s;
+}
+
+.activity-arrow:hover {
+  transform: scale(1.2);
 }
 
 .activity-back {
@@ -238,6 +258,7 @@ button:focus-visible {
   font-weight: 600;
   color: #fff;
   cursor: pointer;
+  background: linear-gradient(135deg, #717cef, #cfa2a2);
 }
 
 .relax-page {

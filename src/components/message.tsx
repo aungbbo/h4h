@@ -45,7 +45,7 @@ export default function Message() {
                   ...prevConfig,
                   defaultSize: {
                     width: 300,
-                    height: 600,
+                    height: 650,
                   },
                 };
               });
