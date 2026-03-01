@@ -1,3 +1,63 @@
+import { useSearchParams, useNavigate } from "react-router-dom";
+import data from "../data.json";
+
 export default function Message() {
-  return <div>Message</div>;
+  const [searchParams] = useSearchParams();
+  const navigate = useNavigate();
+  const feeling = searchParams.get("feeling") ?? "";
+
+  const entry = data.find(
+    (d) => d.name.toLowerCase() === feeling.toLowerCase(),
+  );
+
+  if (!entry) {
+    return (
+      <main className="message-page">
+        <div className="message-card">
+          <h2>We couldn't find that feeling.</h2>
+          <button type="button" onClick={() => navigate("/")}>
+            Go back
+          </button>
+        </div>
+      </main>
+    );
+  }
+
+  return (
+    <main className="message-page">
+      <div className="message-card">
+        <h2 className="message-feeling">A gentle reminder</h2>
+        <p className="message-text">
+          {entry.message} <br /> <br />
+          <span style={{ fontSize: "0.85rem", opacity: 0.7 }}>
+            Please take a moment to do these activities
+          </span>
+        </p>
+
+        <div className="message-actions">
+          <button
+            type="button"
+            className="btn-activity"
+            onClick={() => navigate(`/activity?feeling=${feeling}`)}
+          >
+            Suggestions
+          </button>
+          <button
+            type="button"
+            className="btn-video"
+            onClick={() => navigate(`/relax`)}
+          >
+            Short break
+          </button>
+          <button
+            type="button"
+            className="btn-back"
+            onClick={() => navigate("/")}
+          >
+            Watch a video
+          </button>
+        </div>
+      </div>
+    </main>
+  );
 }

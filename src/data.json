@@ -1,8 +1,8 @@
 [
   {
-    "name": "Angry",
-    "message": "Stay positive, you are doing better than you think!",
-    "link": "https://www.youtube.com/watch?v=iqGAW57EudQ&list=RDiqGAW57EudQ&start_radio=1",
+    "name": "Anxious",
+    "message": "Anxiety can make the future feel urgent and dangerous, even when you’re safe. Your thoughts may be loud, fast, and convincing — but not every thought is a fact. Right now, notice where you are. Notice your breath. Notice something steady around you. You are not in immediate danger. You are allowed to ground yourself. The future does not need to be solved in this second.",
+    "link": "https://youtu.be/s9zZr2KRvzs",
     "activities": [
       "Take a mindful walk outdoors",
       "Try a breathing exercise",
@@ -10,23 +10,33 @@
     ]
   },
   {
-    "name": "Stressed",
-    "message": "Remember, every day is a fresh start.",
-    "link": "https://www.youtube.com/watch?v=iqGAW57EudQ&list=RDiqGAW57EudQ&start_radio=1",
-    "activities": [
-      "Listen to your favorite song",
-      "Call a friend or family member",
-      "Make a small piece of art"
-    ]
-  },
-  {
     "name": "Overwhelmed",
-    "message": "Progress, not perfection. Celebrate your wins!",
-    "link": "https://www.youtube.com/watch?v=iqGAW57EudQ&list=RDiqGAW57EudQ&start_radio=1",
+    "message": "When everything feels like too much, it usually is. You’re not weak for feeling overwhelmed — it simply means your mind has been carrying more than it should alone. You don’t have to fix everything right now. You don’t have to answer every question today. Just choose one small thing. One step. One breath. The rest can wait. You are allowed to slow down and untangle things gently.",
+    "link": "https://youtu.be/inpok4MKVLM",
     "activities": [
       "Stretch for five minutes",
       "Read a chapter from a book",
       "Organize your workspace"
+    ]
+  },
+  {
+    "name": "Lonely",
+    "message": "Feeling lonely doesn’t mean you are unworthy of connection. It simply means you’re human. Even if it feels quiet around you right now, your existence matters more than you realize. Someone, somewhere, would care deeply about your story. Connection sometimes takes time — but it is still possible for you. You are not invisible.",
+    "link": "https://youtu.be/yo1pJ_D-H3M",
+    "activities": [
+      "Stretch for five minutes",
+      "Read a chapter from a book",
+      "Organize your workspace"
+    ]
+  },
+  {
+    "name": "Angry",
+    "message": "It makes sense that you feel angry. Anger often shows up when something feels unfair, hurtful, or out of your control. It doesn’t make you a bad person — it means something matters to you. Before reacting, give yourself a pause. Take a breath. Your power isn’t in how loudly you respond, but in how intentionally you choose your next step. You are allowed to feel this — and you are capable of responding in a way that protects your peace.",
+    "link": "https://youtu.be/9Aq7RNaB0DQ",
+    "activities": [
+      "Take a mindful walk outdoors",
+      "Try a breathing exercise",
+      "Write down three things you're grateful for"
     ]
   }
 ]

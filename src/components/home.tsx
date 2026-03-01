@@ -1,3 +1,4 @@
+import { useNavigate } from "react-router-dom";
 import AnxiousImg from "../assets/Anxious.png";
 import OverwhelmedImg from "../assets/Overwhelmed.png";
 import LonelyImg from "../assets/Lonely.png";
@@ -17,17 +18,24 @@ const feelingsData: Record<
 };
 
 export default function Home() {
+  const navigate = useNavigate();
+
   return (
     <main className="home-page">
       <div className="home-container">
-        <h1 className="home-title">What are you carrying at this moment?</h1>
+        <h1 className="home-title">What are you carrying at the moment?</h1>
         <div className="home-buttons">
           {feelings.map((feeling) => (
             <button
               key={feeling}
               type="button"
               className="feeling-option"
-              style={{ backgroundColor: feelingsData[feeling].color }}
+              style={{
+                background: `linear-gradient(135deg, #ffffff, ${feelingsData[feeling].color})`,
+              }}
+              onClick={() =>
+                navigate(`/message?feeling=${feeling.toLowerCase()}`)
+              }
             >
               <img
                 src={feelingsData[feeling].image}
