@@ -1,11 +1,12 @@
-import { useState, useEffect, useCallback } from "react";
+import { useState, useEffect, useCallback, useRef } from "react";
 import { useNavigate, useSearchParams } from "react-router-dom";
 import MeditateGif from "../assets/Meditate.gif";
+import musicSrc from "../assets/music.mp3";
 
 const BREATHE_CYCLE = [
-  { text: "Breathe in…", duration: 4000 },
-  { text: "Hold…", duration: 4000 },
-  { text: "Breathe out…", duration: 4000 },
+  { text: "Breathe in…", duration: 3500 },
+  { text: "Hold…", duration: 3500 },
+  { text: "Breathe out…", duration: 3500 },
   { text: "Pause…", duration: 2000 },
 ];
 
@@ -21,6 +22,7 @@ export default function Relax() {
   const [searchParams] = useSearchParams();
   const feeling = searchParams.get("feeling") ?? "";
 
+  const audioRef = useRef<HTMLAudioElement | null>(null);
   const [totalSeconds, setTotalSeconds] = useState<number | null>(null);
   const [secondsLeft, setSecondsLeft] = useState(0);
   const [phase, setPhase] = useState(0);
@@ -56,11 +58,28 @@ export default function Relax() {
     return `${m}:${sec.toString().padStart(2, "0")}`;
   };
 
+  useEffect(() => {
+    if (!timerDone || !audioRef.current) return;
+    audioRef.current.pause();
+    audioRef.current.currentTime = 0;
+  }, [timerDone]);
+
+  useEffect(() => {
+    return () => {
+      audioRef.current?.pause();
+    };
+  }, []);
+
   const handleStart = (seconds: number) => {
     setTotalSeconds(seconds);
     setSecondsLeft(seconds);
     setPhase(0);
     setFading(true);
+
+    const audio = new Audio(musicSrc);
+    audio.loop = true;
+    audio.play();
+    audioRef.current = audio;
   };
 
   if (!started) {
@@ -100,7 +119,10 @@ export default function Relax() {
 
           <img src={MeditateGif} alt="Meditation" className="relax-gif" />
 
-          <span className="relax-timer" style={{ visibility: timerDone ? "hidden" : "visible" }}>
+          <span
+            className="relax-timer"
+            style={{ visibility: timerDone ? "hidden" : "visible" }}
+          >
             {formatTime(secondsLeft)}
           </span>
         </div>
