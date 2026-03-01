@@ -1,42 +1,78 @@
 [
   {
     "name": "Anxious",
-    "message": "Anxiety can make the future feel urgent and dangerous, even when you’re safe. Your thoughts may be loud, fast, and convincing — but not every thought is a fact. Right now, notice where you are. Notice your breath. Notice something steady around you. You are not in immediate danger. You are allowed to ground yourself. The future does not need to be solved in this second.",
+    "message": "Anxiety can make the future feel urgent and dangerous, even when you're safe. Your thoughts may be loud, fast, and convincing — but not every thought is a fact. Right now, notice where you are. Notice your breath. Notice something steady around you. You are not in immediate danger. You are allowed to ground yourself. The future does not need to be solved in this second.",
     "link": "https://youtu.be/s9zZr2KRvzs",
     "activities": [
-      "Take a mindful walk outdoors",
-      "Try a breathing exercise",
-      "Write down three things you're grateful for"
+      {
+        "title": "Calming Anxiety Meditation",
+        "details": "Find a quiet spot and sit comfortably. Close your eyes and focus on your breath for 5 minutes. When anxious thoughts arise, acknowledge them gently and return your attention to your breathing."
+      },
+      {
+        "title": "3-3-3 Rule for Anxiety",
+        "details": "Look around and name 3 things you can see. Then identify 3 sounds you can hear. Finally, move 3 parts of your body. This grounds you in the present moment and interrupts the anxiety loop."
+      },
+      {
+        "title": "Slow Breathing Exercise with Visual Guide",
+        "details": "Breathe in slowly for 4 seconds while picturing a circle expanding. Hold for 4 seconds. Exhale for 6 seconds as the circle shrinks. Repeat for 2 minutes until your heart rate settles."
+      }
     ]
   },
   {
     "name": "Overwhelmed",
-    "message": "When everything feels like too much, it usually is. You’re not weak for feeling overwhelmed — it simply means your mind has been carrying more than it should alone. You don’t have to fix everything right now. You don’t have to answer every question today. Just choose one small thing. One step. One breath. The rest can wait. You are allowed to slow down and untangle things gently.",
+    "message": "When everything feels like too much, it usually is. You're not weak for feeling overwhelmed — it simply means your mind has been carrying more than it should alone. You don't have to fix everything right now. You don't have to answer every question today. Just choose one small thing. One step. One breath. The rest can wait. You are allowed to slow down and untangle things gently.",
     "link": "https://youtu.be/inpok4MKVLM",
     "activities": [
-      "Stretch for five minutes",
-      "Read a chapter from a book",
-      "Organize your workspace"
+      {
+        "title": "4-7-8 Breathing Exercise",
+        "details": "Breathe in through your nose for 4 seconds. Hold your breath for 7 seconds. Exhale slowly through your mouth for 8 seconds. Repeat 3–4 times. This slows your nervous system and eases the feeling of being overwhelmed."
+      },
+      {
+        "title": "Brain Dump on Paper",
+        "details": "Grab a blank page and write down everything on your mind — tasks, worries, thoughts — without filtering. Then circle just one thing you can do right now. Let the rest sit on paper instead of in your head."
+      },
+      {
+        "title": "5-Minute Tidy Reset",
+        "details": "Set a timer for 5 minutes. Pick one small area — your desk, a drawer, your bag — and put things back in place. A small sense of order can help your mind feel less chaotic."
+      }
     ]
   },
   {
     "name": "Lonely",
-    "message": "Feeling lonely doesn’t mean you are unworthy of connection. It simply means you’re human. Even if it feels quiet around you right now, your existence matters more than you realize. Someone, somewhere, would care deeply about your story. Connection sometimes takes time — but it is still possible for you. You are not invisible.",
+    "message": "Feeling lonely doesn't mean you are unworthy of connection. It simply means you're human. Even if it feels quiet around you right now, your existence matters more than you realize. Someone, somewhere, would care deeply about your story. Connection sometimes takes time — but it is still possible for you. You are not invisible.",
     "link": "https://youtu.be/yo1pJ_D-H3M",
     "activities": [
-      "Stretch for five minutes",
-      "Read a chapter from a book",
-      "Organize your workspace"
+      {
+        "title": "Journal Your Feelings",
+        "details": "Open a notebook or notes app. Write honestly about how you're feeling right now — no judgment, no editing. Let the words flow for 5 minutes. Putting loneliness into words can make it feel less heavy."
+      },
+      {
+        "title": "Calm Affirmations",
+        "details": "Say these slowly to yourself: 'I am worthy of connection. I matter even when it's quiet. This feeling is temporary.' Repeat 3 times. Let each sentence land before moving to the next."
+      },
+      {
+        "title": "Be Around People",
+        "details": "Go somewhere with gentle human presence — a café, a park bench, a library. You don't have to talk to anyone. Just being near others can remind your nervous system that you're not alone."
+      }
     ]
   },
   {
     "name": "Angry",
-    "message": "It makes sense that you feel angry. Anger often shows up when something feels unfair, hurtful, or out of your control. It doesn’t make you a bad person — it means something matters to you. Before reacting, give yourself a pause. Take a breath. Your power isn’t in how loudly you respond, but in how intentionally you choose your next step. You are allowed to feel this — and you are capable of responding in a way that protects your peace.",
+    "message": "It makes sense that you feel angry. Anger often shows up when something feels unfair, hurtful, or out of your control. It doesn't make you a bad person — it means something matters to you. Before reacting, give yourself a pause. Take a breath. Your power isn't in how loudly you respond, but in how intentionally you choose your next step. You are allowed to feel this — and you are capable of responding in a way that protects your peace.",
     "link": "https://youtu.be/9Aq7RNaB0DQ",
     "activities": [
-      "Take a mindful walk outdoors",
-      "Try a breathing exercise",
-      "Write down three things you're grateful for"
+      {
+        "title": "Box Breathing Exercise",
+        "details": "Breathe in for 4 seconds. Hold for 4 seconds. Breathe out for 4 seconds. Hold again for 4 seconds. That's one box. Repeat 4 times. This gives your body a signal to slow down before you react."
+      },
+      {
+        "title": "Cool Down Walk",
+        "details": "Step outside and walk at a steady pace for 5-10 minutes. Don't try to solve anything — just move. Let each step release a little tension. Focus on the feeling of air on your skin and your feet hitting the ground."
+      },
+      {
+        "title": "Write an Unsent Letter",
+        "details": "Grab paper and write a letter to whoever or whatever made you angry. Say everything you need to. When you're done, don't send it. Fold it up or tear it apart. The point is to get it out of your body."
+      }
     ]
   }
 ]

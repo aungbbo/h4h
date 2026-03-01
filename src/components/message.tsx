@@ -1,4 +1,5 @@
 import { useSearchParams, useNavigate } from "react-router-dom";
+import { initScene } from "@webspatial/react-sdk";
 import data from "../data.json";
 
 export default function Message() {
@@ -38,7 +39,21 @@ export default function Message() {
           <button
             type="button"
             className="btn-activity"
-            onClick={() => navigate(`/activity?feeling=${feeling}`)}
+            onClick={() => {
+              initScene("activityScene", (prevConfig) => {
+                return {
+                  ...prevConfig,
+                  defaultSize: {
+                    width: 300,
+                    height: 600,
+                  },
+                };
+              });
+              window.open(
+                `${__XR_ENV_BASE__}activity?feeling=${feeling}`,
+                "activityScene",
+              );
+            }}
           >
             Suggestions
           </button>

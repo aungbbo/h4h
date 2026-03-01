@@ -133,7 +133,7 @@ export default function Relax() {
           style={{ visibility: timerDone ? "visible" : "hidden" }}
           onClick={() =>
             feeling
-              ? navigate(`/activity?feeling=${feeling}`)
+              ? window.open(`${window.location.origin}${__XR_ENV_BASE__}/activity?feeling=${feeling}`, "_blank", "noopener,noreferrer")
               : navigate("/result")
           }
         >
