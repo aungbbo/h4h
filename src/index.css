@@ -153,6 +153,120 @@ button:focus-visible {
   background: linear-gradient(135deg, #b0a3d6, #8ab8d4);
 }
 
+.relax-page {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 32px 16px;
+}
+
+.relax-container {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 24px;
+}
+
+.relax-hero,
+.relax-hero-after {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+  width: 420px;
+  height: 420px;
+  border-radius: 20px;
+  background: radial-gradient(circle, #9685af, #b0afb2, #b2cbaf);
+  color: black;
+}
+
+.relax-gif {
+  width: 220px;
+  height: 220px;
+  object-fit: contain;
+  border-radius: 50%;
+}
+
+.relax-breathe {
+  font-size: 1.6rem;
+  font-weight: 600;
+  transition: opacity 0.4s ease;
+  height: 2.4rem;
+  display: flex;
+  align-items: center;
+  color: black;
+}
+
+.relax-breathe.visible {
+  opacity: 1;
+}
+
+.relax-breathe.hidden {
+  opacity: 0;
+}
+
+.relax-timer {
+  font-size: 1.6rem;
+  opacity: 0.7;
+  height: 2.4rem;
+  display: flex;
+  align-items: center;
+  color: black;
+}
+
+.relax-next {
+  padding: 12px 32px;
+  border-radius: 12px;
+  border: none;
+  font-weight: 600;
+  color: #fff;
+  cursor: pointer;
+  animation: fadeInUp 0.5s ease;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.relax-prompt {
+  margin: 0;
+  font-size: 1.3rem;
+  text-align: center;
+  opacity: 0.7;
+}
+
+.relax-options {
+  display: flex;
+  justify-content: space-between;
+}
+
+.relax-option {
+  padding: 12px 24px;
+  border-radius: 12px;
+  border: none;
+  font-weight: 600;
+  color: #fff;
+  cursor: pointer;
+  font-size: 1rem;
+  transition:
+    opacity 0.25s,
+    transform 0.2s;
+}
+
+.relax-option:hover {
+  opacity: 0.88;
+  transform: translateY(-1px);
+}
+
 html.is-spatial {
   background-color: transparent;
   --xr-background-material: transparent;
