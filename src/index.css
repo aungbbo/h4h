@@ -145,11 +145,11 @@ button:focus-visible {
   background: linear-gradient(135deg, #8ab8d4, #b0a3d6);
 }
 
-.btn-video {
+.btn-relax {
   background: linear-gradient(135deg, #9aa5e8, #7cc0d8);
 }
 
-.btn-back {
+.btn-video {
   background: linear-gradient(135deg, #b0a3d6, #8ab8d4);
 }
 
@@ -328,6 +328,10 @@ button:focus-visible {
   width: 100%;
   object-fit: contain;
   border-radius: 16px;
+}
+
+.btn-back {
+  border-radius: 12px;
 }
 
 html.is-spatial {

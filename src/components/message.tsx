@@ -44,15 +44,15 @@ export default function Message() {
           </button>
           <button
             type="button"
-            className="btn-video"
+            className="btn-relax"
             onClick={() => navigate(`/relax`)}
           >
             Short break
           </button>
           <button
             type="button"
-            className="btn-back"
-            onClick={() => navigate("/")}
+            className="btn-video"
+            onClick={() => navigate(`/video?feeling=${feeling}`)}
           >
             Watch a video
           </button>
