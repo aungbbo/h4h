@@ -50,7 +50,7 @@ export default function Message() {
                 };
               });
               window.open(
-                `${__XR_ENV_BASE__}activity?feeling=${feeling}`,
+                `${typeof __XR_ENV_BASE__ !== "undefined" ? __XR_ENV_BASE__ : "/"}activity?feeling=${feeling}`,
                 "activityScene",
               );
             }}
