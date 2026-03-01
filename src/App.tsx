@@ -7,6 +7,7 @@ import Relax from "./components/relax";
 import Result from "./components/result";
 import Activity from "./components/activity";
 import Video from "./components/video";
+import Final from "./components/final";
 
 function App() {
   // const basename =
@@ -21,6 +22,7 @@ function App() {
         <Route path="/result" element={<Result />} />
         <Route path="/activity" element={<Activity />} />
         <Route path="/video" element={<Video />} />
+        <Route path="/final" element={<Final />} />
         {/* <Route path="/webspatial/avp" element={<StartPage />} />
         <Route path="/notes" element={<Notes />} />
         <Route path="/notes/:content" element={<Notepad />} />
